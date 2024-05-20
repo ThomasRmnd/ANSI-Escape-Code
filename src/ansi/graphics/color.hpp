@@ -137,7 +137,7 @@ std::basic_ostream<_CharT, _Traits>& swapcolors(std::basic_ostream<_CharT, _Trai
 };
 
 template<typename _CharT, typename _Traits>
-std::basic_ostream<_CharT, _Traits>& notswapcolors(std::basic_ostream<_CharT, _Traits>& __os) {
+std::basic_ostream<_CharT, _Traits>& unswapcolors(std::basic_ostream<_CharT, _Traits>& __os) {
     return __os << "\x1b[27m";
 };
 

@@ -39,6 +39,14 @@ std::basic_ostream<_CharT, _Traits>& __insert_ostream(std::basic_ostream<_CharT,
     return __os;
 }
 
+template<typename _CharT, typename _Traits>
+std::basic_ostream<_CharT, _Traits>& __insert_ostream(std::basic_ostream<_CharT, _Traits>& __os, char __c1, int __n, char __c2) {
+    std::ios_base::fmtflags __flags = __os.flags(static_cast<std::ios_base::fmtflags>(0L));
+    __os << "\x1b[" << __c1 << __n << __c2;
+    __os.flags(__flags);
+    return __os;
+}
+
 } // namespace __impl
 
 } // namespace ansi
