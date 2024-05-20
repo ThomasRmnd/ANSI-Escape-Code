@@ -12,5 +12,6 @@ Fill free to report any issues or make any suggestions.
 
 Resources:
 - [Wikipedia: ANSI escape code](https://en.wikipedia.org/wiki/ANSI_escape_code)
+- [fnky - ANSI Escape Sequences](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797)
 - [XTerm Control Sequences](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html)
 - [Supported Terminal Sequences](https://xtermjs.org/docs/api/vtfeatures/)
